@@ -8,6 +8,10 @@ import * as serviceWorker from './serviceWorker';
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 
+console.log(process.env.REACT_APP_NAME);
+
+
+
 Sentry.init({dsn: "https://f9cf26eedcc04f5298c4d42156699cea@sentry.io/1544151"});
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
